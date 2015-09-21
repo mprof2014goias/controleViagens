@@ -1,0 +1,159 @@
+Testsuite: controle_viagens.ViagenControllerSpec
+Tests run: 7, Failures: 7, Errors: 0, Time elapsed: 1,194 sec
+------------- Standard Output ---------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+
+Testcase: Test the index action returns the correct model took 0,621 sec
+	FAILED
+Condition not satisfied:
+
+model.viagenInstanceCount == 0
+|     |                   |
+|     null                false
+[viagemInstanceCount:0, keyword:null, emptyCollection:[]]
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.viagenInstanceCount == 0
+|     |                   |
+|     null                false
+[viagemInstanceCount:0, keyword:null, emptyCollection:[]]
+
+	at controle_viagens.ViagenControllerSpec.Test the index action returns the correct model(ViagenControllerSpec.groovy:25)
+
+Testcase: Test the create action returns the correct model took 0,081 sec
+	FAILED
+Condition not satisfied:
+
+model.viagenInstance!= null
+|     |             |
+|     null          false
+[viagemInstance:]
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.viagenInstance!= null
+|     |             |
+|     null          false
+[viagemInstance:]
+
+	at controle_viagens.ViagenControllerSpec.Test the create action returns the correct model(ViagenControllerSpec.groovy:33)
+
+Testcase: Test the save action correctly persists an instance took 0,081 sec
+	FAILED
+Condition not satisfied:
+
+model.viagenInstance!= null
+|     |             |
+|     null          false
+[viagemInstance:]
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.viagenInstance!= null
+|     |             |
+|     null          false
+[viagemInstance:]
+
+	at controle_viagens.ViagenControllerSpec.Test the save action correctly persists an instance(ViagenControllerSpec.groovy:46)
+
+Testcase: Test that the show action returns the correct model took 0,083 sec
+	FAILED
+Condition not satisfied:
+
+model.viagenInstance == viagen
+|     |              |  |
+|     null           |  controle_viagens.Viagem@49559048
+[viagemInstance:]    false
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.viagenInstance == viagen
+|     |              |  |
+|     null           |  controle_viagens.Viagem@49559048
+[viagemInstance:]    false
+
+	at controle_viagens.ViagenControllerSpec.Test that the show action returns the correct model(ViagenControllerSpec.groovy:75)
+
+Testcase: Test that the edit action returns the correct model took 0,068 sec
+	FAILED
+Condition not satisfied:
+
+model.viagenInstance == viagen
+|     |              |  |
+|     null           |  controle_viagens.Viagem@8699bc7
+[viagemInstance:]    false
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.viagenInstance == viagen
+|     |              |  |
+|     null           |  controle_viagens.Viagem@8699bc7
+[viagemInstance:]    false
+
+	at controle_viagens.ViagenControllerSpec.Test that the edit action returns the correct model(ViagenControllerSpec.groovy:91)
+
+Testcase: Test the update action performs an update on a valid domain instance took 0,122 sec
+	FAILED
+Condition not satisfied:
+
+response.redirectedUrl == '/viagen/index'
+|        |             |
+|        /viagem/index false
+|                      1 difference (92% similarity)
+|                      /viage(m)/index
+|                      /viage(n)/index
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@77fdab5f
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/viagen/index'
+|        |             |
+|        /viagem/index false
+|                      1 difference (92% similarity)
+|                      /viage(m)/index
+|                      /viage(n)/index
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@77fdab5f
+
+	at controle_viagens.ViagenControllerSpec.Test the update action performs an update on a valid domain instance(ViagenControllerSpec.groovy:101)
+
+Testcase: Test that the delete action deletes an instance if it exists took 0,077 sec
+	FAILED
+Condition not satisfied:
+
+response.redirectedUrl == '/viagen/index'
+|        |             |
+|        /viagem/index false
+|                      1 difference (92% similarity)
+|                      /viage(m)/index
+|                      /viage(n)/index
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@65630456
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/viagen/index'
+|        |             |
+|        /viagem/index false
+|                      1 difference (92% similarity)
+|                      /viage(m)/index
+|                      /viage(n)/index
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@65630456
+
+	at controle_viagens.ViagenControllerSpec.Test that the delete action deletes an instance if it exists(ViagenControllerSpec.groovy:133)
+

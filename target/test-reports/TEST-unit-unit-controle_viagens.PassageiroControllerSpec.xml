@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="2" failures="1" hostname="lnx" name="controle_viagens.PassageiroControllerSpec" tests="7" time="1.603" timestamp="2015-09-21T15:03:05">
+  <properties />
+  <testcase classname="controle_viagens.PassageiroControllerSpec" name="Test the index action returns the correct model" time="0.768" />
+  <testcase classname="controle_viagens.PassageiroControllerSpec" name="Test the create action returns the correct model" time="0.086" />
+  <testcase classname="controle_viagens.PassageiroControllerSpec" name="Test the save action correctly persists an instance" time="0.189">
+    <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at controle_viagens.PassageiroController.tt__save_closure10_closure18(PassageiroController.groovy:71)
+	at controle_viagens.PassageiroController.$tt__save(PassageiroController.groovy:65)
+	at controle_viagens.PassageiroControllerSpec.Test the save action correctly persists an instance(PassageiroControllerSpec.groovy:54)
+</error>
+  </testcase>
+  <testcase classname="controle_viagens.PassageiroControllerSpec" name="Test that the show action returns the correct model" time="0.088" />
+  <testcase classname="controle_viagens.PassageiroControllerSpec" name="Test that the edit action returns the correct model" time="0.085" />
+  <testcase classname="controle_viagens.PassageiroControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.151">
+    <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at controle_viagens.PassageiroControllerSpec.Test the update action performs an update on a valid domain instance(PassageiroControllerSpec.groovy:122)
+</error>
+  </testcase>
+  <testcase classname="controle_viagens.PassageiroControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.168">
+    <failure message="Condition not satisfied:&#xa;&#xa;Passageiro.count() == 1&#xa;           |       |&#xa;           0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Passageiro.count() == 1
+           |       |
+           0       false
+
+	at controle_viagens.PassageiroControllerSpec.Test that the delete action deletes an instance if it exists(PassageiroControllerSpec.groovy:142)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+  <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+</testsuite>
